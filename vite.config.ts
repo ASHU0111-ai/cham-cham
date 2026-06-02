@@ -12,4 +12,7 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Use Netlify preset so Nitro outputs static files to dist/ and the
+  // server handler to .netlify/functions-internal/ for SSR on Netlify.
+  nitro: { preset: "netlify" },
 });
