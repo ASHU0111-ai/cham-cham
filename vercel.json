@@ -1,7 +1,7 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": ".output",
-  "nodeVersion": "20.x",
+  "buildCommand": "vite build",
+  "outputDirectory": ".output/public",
+  "framework": null,
   "env": {
     "NODE_ENV": "production"
   },
@@ -13,11 +13,5 @@
     "api/**/*.ts": {
       "runtime": "nodejs20.x"
     }
-  },
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/"
-    }
-  ]
+  }
 }
